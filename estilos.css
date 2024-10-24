@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 5px solid rgb(47, 88, 34);
+    position: relative;
+}
+
+
+
+.image {
+    width: 100%;
+    max-width: 50px;
+    padding-left: 150px;
+}
+
+.indice {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-right: 400px;
+    gap: 20px;
+}
+
+.indice li {
+    padding: 0;
+    position: relative;
+}
+
+.indice li a {
+    text-decoration: none;
+    color: rgb(48, 103, 38);
+    font-size: 20px;
+}
+
+.indice li a:hover {
+    color: rgb(98, 213, 86);
+}
+
+.indice li a.active {
+    color: rgb(98, 213, 86);
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    background-color: rgb(148, 252, 170);
+    margin: auto;
+    width: 100%;
+}
+
+.content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text {
+    max-width: 600px;
+    width: 100%;
+    margin: 0;
+    padding-right: 400px;
+}
+
+.h1-index {
+    color: rgb(47, 101, 31);
+}
+
+.h2-index {
+    color: rgb(50, 107, 37);
+}
+
+.healtyfood-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.healtyfood-img img {
+    max-width: 400px;
+    padding-top: 40px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(47, 102, 31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.p-white {
+    color: white;
+}
+
+
+/*CSS PARA PRODUCTOS*/
+
+.h1-productos{
+
+    color: rgb(47, 102, 31);
+    text-align: center;
+}
