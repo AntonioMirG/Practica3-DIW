@@ -5,24 +5,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compra</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.jpg" class="image" alt="Logo">
+        </div>
+        <nav>
+            <ul class="indice">
+                <li><a href="index.html"><strong>INICIO</strong></a></li>
+                <li><a href="productos.html" class="active"><strong>PRODUCTOS</strong></a></li>
+                <li><a href="compra.html"><strong>COMPRA</strong></a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav class="nav">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="compra.html">Compra</a></li>
-        </ul>
-    </nav>
+    <div class="containerCompra">
 
-    <div class="container"></div>
+        <h1 class="h1-compra">Realiza tu pedido</h1>
 
-    <div class="footer">
-        <p>PEC3 Lenguajes y estandares web, 2020. Antonio Mir</p>
-        <p>Créditos: Vector de Logo creado por freepik - www.freepik.es</p>
+        <p>Rellena el siguente formulario para realizar tu pedido</p>
+
+        <form class="formCompra">
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <label for="Nombre">Nombre</label>
+                <input type="text" id="Nombre" name="Nombre" required>
+
+                <label for="Apellidos">Apellidos</label>
+                <input type="text" id="Apellidos" name="Apellidos" required>
+
+                <label for="Dni">DNI</label>
+                <input type="text" id="Dni" name="Dni" required>
+
+                <label for="Correo Electronico">Correo Electronico</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="Teléfono">Teléfono</label>
+                <input type="number" id="Telefono" name="Telefono" required>
+
+                <label for="Fecha">Fecha de pedido</label>
+                <input type="date" id="Fecha" name="Fecha" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dirección</legend>
+
+                <label for="Calle">Calle y número </label>
+                <input type="text" id="Calle" name="Calle" required>
+
+                <label for="Ciudad">Ciudad</label>
+                <input type="text" id="Ciudad" name="Ciudad" required>
+
+                <label for="Código Postal">Código Postal</label>
+                <input type="number" id="CP" name="CP" required>
+
+                <label for="Provincia">Provincia</label>
+                <input type="text" id="Provincia" name="Provincia" required>
+
+                <label for="País">País</label>
+                <input type="text" id="País" name="País" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos de pago y compra</legend>
+
+                <label for="metodo_pago">Método de Pago:</label>
+        <select id="metodo_pago" name="metodo_pago" required>
+
+            <option value="transferencia">Transferencia</option>
+            <option value="tarjeta_credito">Tarjeta de crédito</option>
+            <option value="paypal">Paypal</option>
+
+        </select>
+
+        <label for="dia_entrega">Día de entrega preferido:</label>
+
+        <select id="dia_entrega" name="dia_entrega" required>
+
+            <optgroup label="Laborable">
+
+                <option value="lunes">Lunes</option>
+                <option value="martes">Martes</option>
+                <option value="miercoles">Miércoles</option>
+                <option value="jueves">Jueves</option>
+                <option value="viernes">Viernes</option>
+
+            </optgroup>
+
+            <optgroup label="Fin de semana">
+
+                <option value="sabado">Sábado</option>
+                <option value="domingo">Domingo</option>
+
+            </optgroup>
+        </select>
+
+        <label for="franja_horaria">Franja horaria preferida:</label>
+
+        <select id="franja_horaria" name="franja_horaria" required>
+
+            <optgroup label="Mañana">
+
+                <option value="9-12">09:00 - 12:00</option>
+                <option value="12-14">12:00 - 14:00</option>
+
+            </optgroup>
+
+            <optgroup label="Tarde">
+
+                <option value="16-18">16:00 - 18:00</option>
+                <option value="18-20">18:00 - 20:00</option>
+                
+            </optgroup>
+        </select>          
+            </fieldset>
+
+            <button class="button">Enviar</button>
+        </form>
+
+
     </div>
+
+    <footer>
+        <p class="p-white" style="padding-right: 100px;">PEC3 Lenguajes y estandares web, 2020.<strong>Antonio
+                Mir</strong> </p>
+        <p class="p-white">Créditos: <strong>Vector de Logo creado por freepik - www.freepik.es</strong> </p>
+    </footer>
 </body>
 
 </html>

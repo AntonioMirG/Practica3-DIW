@@ -1,3 +1,8 @@
+html {
+    width: 100%;
+    height: auto;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -14,8 +19,6 @@ header {
     position: relative;
 }
 
-
-
 .image {
     width: 100%;
     max-width: 50px;
@@ -29,33 +32,43 @@ header {
     padding: 0;
     padding-right: 400px;
     gap: 20px;
+    margin-top: 5px;
 }
 
 .indice li {
     padding: 0;
     position: relative;
+    text-decoration: none;
+
 }
 
 .indice li a {
     text-decoration: none;
-    color: rgb(48, 103, 38);
-    font-size: 20px;
+    padding-top: 15px;
 }
+
+.indice li a.active {
+    color: rgb(98, 213, 86);
+    border-bottom: 5px solid rgb(98, 213, 86);
+    padding-bottom: 25px;
+    border-radius: 0;
+
+}
+
 
 .indice li a:hover {
     color: rgb(98, 213, 86);
 }
 
-.indice li a.active {
-    color: rgb(98, 213, 86);
-}
-
+/*Parte reservada a index*/
 .container {
     display: flex;
     padding: 20px;
     background-color: rgb(148, 252, 170);
     margin: auto;
     width: 100%;
+    height: 75vh;
+
 }
 
 .content {
@@ -82,6 +95,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 100px;
+
 }
 
 .healtyfood-img img {
@@ -96,7 +111,6 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    width: 100%;
 }
 
 .p-white {
@@ -106,8 +120,131 @@ footer {
 
 /*CSS PARA PRODUCTOS*/
 
-.h1-productos{
-
-    color: rgb(47, 102, 31);
+.h1-productos {
     text-align: center;
+    padding-top: 20px
+}
+
+.p-productos {
+    padding-left: 480px;
+    padding-block: 10px;
+}
+
+.container-productos {
+    padding: 20px;
+    background-color: rgb(148, 252, 170);
+    margin: auto;
+    width: 100%;
+    height: 75vh;
+}
+
+/*Tabla*/
+
+
+.caption {
+
+    border: 2px solid black;
+    background-color: rgb(47, 102, 31);
+}
+
+
+
+.center-green {
+    background-color: rgb(114, 246, 109);
+    text-align: center;
+    padding-inline: 10px;
+    padding: 5px;
+}
+
+
+.center-white {
+    background-color: white;
+    text-align: center;
+    padding-inline: 10px;
+    padding: 5px;
+}
+
+.productTable {
+    border-spacing: 0;
+    width: 40%;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.productTable td,
+th {
+    border: 1px solid black;
+}
+
+.productoPrecioDispo {
+    padding-inline: 40px;
+    background-color: rgb(98, 213, 94);
+    padding-inline: 10px;
+}
+
+.frutasVerduras {
+    padding-inline: 20px;
+    background-color: rgb(98, 213, 94);
+    text-align: center;
+}
+
+.trFinal {
+
+    background-color: rgb(114, 246, 109);
+    padding: 20px;
+}
+
+.trFinal td {
+
+    padding: 20px;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+/*CSS PARA COMPRA*/
+
+.containerCompra {
+
+    padding: 20px;
+    background-color: rgb(148, 252, 170);
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    padding-left: 300px;
+
+}
+
+/*El h1-compra es igual a h1-index, podria usar el mismo para los dos pero me parece mas limpio asi*/
+
+.h1-compra {
+    color: rgb(47, 101, 31);
+
+}
+
+.formCompra {
+
+
+}
+
+fieldset {
+    border: 0px;
+    border: 2px solid black;
+    width: 12%;
+    background-color: rgb(220, 220, 220);
+    color:black;
+    padding: 10px;
+    gap: 10px;
+
+}
+
+label {
+    display: flex;
+ 
+}
+
+.button{
+     margin: 10px;
+     border: 2px solid black;
+
 }
