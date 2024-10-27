@@ -1,0 +1,17 @@
+nav {
+  display: flex;
+  gap: 50px;
+  background-color: rgb(29, 207, 207);
+  text-decoration: none;
+  height: 100px;
+  width: 100%;
+  max-width: 1024px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-a {
+  text-decoration: none;
+  color: black;
+
+}
