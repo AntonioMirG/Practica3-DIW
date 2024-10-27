@@ -31,7 +31,7 @@
 
         <p>Rellena el siguente formulario para realizar tu pedido</p>
 
-        <form class="formCompra">
+        <form>
             <fieldset>
                 <legend>Datos Personales</legend>
 
@@ -77,62 +77,67 @@
                 <legend>Datos de pago y compra</legend>
 
                 <label for="metodo_pago">Método de Pago:</label>
-        <select id="metodo_pago" name="metodo_pago" required>
+                <select id="metodo_pago" name="metodo_pago" required>
 
-            <option value="transferencia">Transferencia</option>
-            <option value="tarjeta_credito">Tarjeta de crédito</option>
-            <option value="paypal">Paypal</option>
+                    <option value="transferencia">Transferencia</option>
+                    <option value="tarjeta_credito">Tarjeta de crédito</option>
+                    <option value="paypal">Paypal</option>
 
-        </select>
+                </select>
 
-        <label for="dia_entrega">Día de entrega preferido:</label>
+                <label for="dia_entrega">Día de entrega preferido:</label>
 
-        <select id="dia_entrega" name="dia_entrega" required>
+                <select id="dia_entrega" name="dia_entrega" required>
 
-            <optgroup label="Laborable">
+                    <optgroup label="Laborable">
 
-                <option value="lunes">Lunes</option>
-                <option value="martes">Martes</option>
-                <option value="miercoles">Miércoles</option>
-                <option value="jueves">Jueves</option>
-                <option value="viernes">Viernes</option>
+                        <option value="lunes">Lunes</option>
+                        <option value="martes">Martes</option>
+                        <option value="miercoles">Miércoles</option>
+                        <option value="jueves">Jueves</option>
+                        <option value="viernes">Viernes</option>
 
-            </optgroup>
+                    </optgroup>
 
-            <optgroup label="Fin de semana">
+                    <optgroup label="Fin de semana">
 
-                <option value="sabado">Sábado</option>
-                <option value="domingo">Domingo</option>
+                        <option value="sabado">Sábado</option>
+                        <option value="domingo">Domingo</option>
 
-            </optgroup>
-        </select>
+                    </optgroup>
+                </select>
 
-        <label for="franja_horaria">Franja horaria preferida:</label>
+                <label for="franja_horaria">Franja horaria preferida:</label>
 
-        <select id="franja_horaria" name="franja_horaria" required>
+                <select id="franja_horaria" name="franja_horaria" required>
 
-            <optgroup label="Mañana">
+                    <optgroup label="Mañana">
 
-                <option value="9-12">09:00 - 12:00</option>
-                <option value="12-14">12:00 - 14:00</option>
+                        <option value="9-12">09:00 - 12:00</option>
+                        <option value="12-14">12:00 - 14:00</option>
 
-            </optgroup>
+                    </optgroup>
 
-            <optgroup label="Tarde">
+                    <optgroup label="Tarde">
 
-                <option value="16-18">16:00 - 18:00</option>
-                <option value="18-20">18:00 - 20:00</option>
-                
-            </optgroup>
-        </select>          
+                        <option value="16-18">16:00 - 18:00</option>
+                        <option value="18-20">18:00 - 20:00</option>
+
+                    </optgroup>
+                </select>
+            </fieldset>
+<br>
+            <fieldset>
+                <label for="PoliticaDePrivacidad">Politica De Privacidad</label>
+                <input type="checkbox" name="PoliticaDePrivacidad" id="PoliticaDePrivacidad" required>
+
+                <label for="condicionesDeUso">Condiciones De Uso</label>
+                <input type="checkbox" name="condicionesDeUso" id="condicionesDeUso" required>
+
             </fieldset>
 
             <button class="button">Enviar</button>
         </form>
-        Antes de enviar los datos (habrá que proporcionar una casilla para ello), los usuarios tendrán que 
-aceptar la política de privacidad y las condiciones de uso (este campo deberá ser también obligatorio).
-
-
     </div>
 
     <footer>

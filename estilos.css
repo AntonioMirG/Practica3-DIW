@@ -222,17 +222,12 @@ th {
 
 }
 
-.formCompra {
-
-
-}
-
 fieldset {
     border: 0px;
     border: 2px solid black;
     width: 12%;
     background-color: rgb(220, 220, 220);
-    color:black;
+    color: black;
     padding: 10px;
     gap: 10px;
 
@@ -240,11 +235,11 @@ fieldset {
 
 label {
     display: flex;
- 
+
 }
 
-.button{
-     margin: 10px;
-     border: 2px solid black;
+.button {
+    margin: 10px;
+    border: 2px solid black;
 
 }
