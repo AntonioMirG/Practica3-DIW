@@ -67,7 +67,6 @@ header {
     background-color: rgb(148, 252, 170);
     margin: auto;
     width: 100%;
-    height: 75vh;
 
 }
 
@@ -122,7 +121,8 @@ footer {
 
 .h1-productos {
     text-align: center;
-    padding-top: 20px
+    padding-top: 20px;
+    color: rgb(47, 101, 31);
 }
 
 .p-productos {
@@ -135,7 +135,6 @@ footer {
     background-color: rgb(148, 252, 170);
     margin: auto;
     width: 100%;
-    height: 75vh;
 }
 
 /*Tabla*/
@@ -218,7 +217,8 @@ th {
 /*El h1-compra es igual a h1-index, podria usar el mismo para los dos pero me parece mas limpio asi*/
 
 .h1-compra {
-    color: rgb(47, 101, 31);
+   
+     color: rgb(47, 101, 31);
 
 }
 
