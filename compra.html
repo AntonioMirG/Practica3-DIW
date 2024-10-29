@@ -47,7 +47,7 @@
                 <label for="email">Correo Electronico</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="Teléfono">Teléfono</label>
+                <label for="Telefono">Telefono</label>
                 <input type="number" id="Telefono" name="Telefono" required>
 
                 <label for="Fecha">Fecha de pedido</label>
@@ -57,37 +57,35 @@
             <fieldset>
                 <legend>Dirección</legend>
 
-                <label for="Calle">Calle y número </label>
+                <label for="Calle">Calle y numero </label>
                 <input type="text" id="Calle" name="Calle" required>
 
                 <label for="Ciudad">Ciudad</label>
                 <input type="text" id="Ciudad" name="Ciudad" required>
 
-                <label for="CP">Código Postal</label>
+                <label for="CP">Codigo Postal</label>
                 <input type="number" id="CP" name="CP" required>
 
                 <label for="Provincia">Provincia</label>
                 <input type="text" id="Provincia" name="Provincia" required>
 
-                <label for="País">País</label>
-                <input type="text" id="País" name="País" required>
+                <label for="Pais">Pais</label>
+                <input type="text" id="Pais" name="Pais" required>
             </fieldset>
 
             <fieldset>
                 <legend>Datos de pago y compra</legend>
 
-                <label for="metodo_pago">Método de Pago:</label>
-                <select id="metodo_pago" name="metodo_pago" required>
-
+                <label for="metodo_pago">Metodo de Pago:</label>
+                <select id="metodo_pago" name="metodo_pago" size="3" required>
                     <option value="transferencia">Transferencia</option>
                     <option value="tarjeta_credito">Tarjeta de crédito</option>
                     <option value="paypal">Paypal</option>
-
                 </select>
 
-                <label for="dia_entrega">Día de entrega preferido:</label>
+                <label for="dia_entrega">Dia de entrega preferido:</label>
 
-                <select id="dia_entrega" name="dia_entrega" required>
+                <select id="dia_entrega" name="dia_entrega" size="7" required>
 
                     <optgroup label="Laborable">
 
@@ -101,15 +99,15 @@
 
                     <optgroup label="Fin de semana">
 
-                        <option value="sabado">Sábado</option>
+                        <option value="sabado">Sabado</option>
                         <option value="domingo">Domingo</option>
 
                     </optgroup>
                 </select>
 
-                <label for="franja_horaria">Franja horaria preferida:</label>
+                <label for="franja_horaria">Franja horaria:</label>
 
-                <select id="franja_horaria" name="franja_horaria" required>
+                <select id="franja_horaria" name="franja_horaria" size="4" required>
 
                     <optgroup label="Mañana">
 
